@@ -1,6 +1,5 @@
 # Inventory Tracker
 
-# Initialize an empty inventory dictionary
 inventory = {}
 
 def add_item(name, quantity):
@@ -43,7 +42,6 @@ def get_user_choice():
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
-# Example Usage
 while True:
     choice = get_user_choice()
     if choice == 1:
