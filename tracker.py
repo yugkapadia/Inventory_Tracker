@@ -1,5 +1,4 @@
 # Inventory Tracker
-
 inventory = {}
 
 def add_item(name, quantity):
@@ -38,9 +37,9 @@ def get_user_choice():
             if choice in [1, 2, 3, 4]:
                 return choice
             else:
-                print("Invalid choice. Please enter a number between 1 and 4.")
+                print("Invalid choice. Enter a number between 1 and 4.")
         except ValueError:
-            print("Invalid input. Please enter a valid number.")
+            print("Invalid input. Enter a valid number.")
 
 while True:
     choice = get_user_choice()
@@ -52,7 +51,7 @@ while True:
                 item_quantity = int(input("Enter quantity: "))
                 break
             except ValueError:
-                print("Invalid input. Please enter a valid number.")
+                print("Invalid input. Enter a valid number.")
         add_item(item_name, item_quantity)
     elif choice == 2:
         item_name = input("Enter item name: ")
@@ -61,10 +60,10 @@ while True:
                 item_quantity = int(input("Enter quantity: "))
                 break
             except ValueError:
-                print("Invalid input. Please enter a valid number.")
+                print("Invalid input. Enter a valid number.")
         remove_item(item_name, item_quantity)
     elif choice == 3:
         view_inventory()
     elif choice == 4:
-        print("Exiting inventory tracker. Goodbye!")
+        print("Exiting inventory tracker.")
         break
